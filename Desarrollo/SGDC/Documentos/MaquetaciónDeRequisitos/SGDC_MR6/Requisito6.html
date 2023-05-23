@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro e Inicio de Sesión</title>
+        <link rel="stylesheet" href="Requisito6.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src = "Logo.jpeg">
+            <nav>
+                <ul>
+                    <li><a href="#">Carta</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="iniciosesion">
+                <div>
+                    <h2>INICIA SESIÓN</h2>
+                    <p>¿No tienes una cuenta? <a id="unete_ahora" href="#" onclick="mostrar();" onclick="ocultar();">ÚNETE AHORA</a></p>
+                    <form>
+                        <label for="telefono"></label> 
+		                <input type="text" placeholder="Número de teléfono" name="telefono" required><br><br>
+
+                        <label for="contraseña"></label> 
+		                <input type="text" placeholder="Contraseña" name="contraseña" required><br>
+
+                    </form><br>
+                    <button>Iniciar Sesión</button>
+                    <p>Continuar con</p>
+                    <button>Google</button><br><br>
+                    <button>Facebook</button>
+                    <p><a href="#">Olvide mi contraseña</a></p>
+                </div>
+            </section>
+            <section id="registro">
+                <div>
+                    <h2>REGISTRATE</h2>
+                    <form>
+                        <label for="nombres"></label> 
+		                <input type="text" placeholder="Nombres" name="nombres" required><br><br>
+
+                        <label for="apellidos"></label> 
+		                <input type="text" placeholder="Apellidos" name="apellidos" required><br><br>
+
+                        <label for="telefono"></label> 
+		                <input type="text" placeholder="Número de teléfono" name="telefono" required><br><br>
+
+                        <label for="direccion"></label> 
+		                <input type="text" placeholder="Dirección" name="direccion" required><br><br>
+
+                        <label for="contraseña"></label> 
+		                <input type="text" placeholder="Contraseña" name="contraseña" required><br><br>
+
+                    </form>
+                </div>
+            </section>
+        </main>
+        <br><br><br>
+        <footer>
+            <p>Comida a Domicilio - Todos los derechos reservados &copy; 2023</p>
+        </footer>
+    </body>
+    <script src="Requisito6.js"></script>
+</html>
