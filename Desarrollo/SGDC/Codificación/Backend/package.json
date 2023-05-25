@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/luandeer/CodeMentorSolutions/issues"
   },
-  "homepage": "https://github.com/luandeer/CodeMentorSolutions#readme"
+  "homepage": "https://github.com/luandeer/CodeMentorSolutions#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
