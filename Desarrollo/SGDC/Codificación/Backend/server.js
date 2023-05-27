@@ -1,13 +1,14 @@
 // import express
 const express = require('express');
+const routerCliente = require('./routers/routerCliente');
 
 const app = express();
 
+// middleware
+app.use(express.json());
 
-app.get('/', (req, res) => {
-   res.send('Primera solicitud');
-});
-
+// routing
+app.use('/', routerCliente);
 
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
