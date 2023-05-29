@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba de conexión a la base de datos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Prueba de conexión a la base de datos</h1>
+
+    <div id="resultados">
+        <!-- Aquí se mostrarán los resultados de la prueba -->
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'conexion.php', // Reemplaza 'archivo.php' con el nombre de tu archivo PHP
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    // Manipula los datos recibidos en 'response' y actualiza la página
+                    $('#resultados').html('Conexión exitosa a la base de datos');
+                },
+                error: function(xhr, status, error) {
+                    // Manejo de errores
+                    $('#resultados').html('Error en la conexión a la base de datos');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
