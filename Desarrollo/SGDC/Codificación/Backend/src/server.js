@@ -1,8 +1,6 @@
 const express = require('express');
 const path = require('path');
 
-const conexion = require('./database/database');
-
 // configuracion
 const app = express();
 app.use(express.json());
