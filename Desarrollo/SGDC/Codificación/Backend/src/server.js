@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require('path');
+const conexion = require('./database/database');
+
 
 const app = express();
 
