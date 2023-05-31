@@ -8,4 +8,4 @@ const registrarUsuario = (req, res) => {
    console.log('Usuario registrado');
 }
 
-module.exports = registrarUsuario;
+module.exports = { registrarUsuario };
