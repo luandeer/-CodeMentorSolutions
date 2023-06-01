@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ChickenGO - RequiaRR</title>
+    <link rel="stylesheet" type="text/css" href="RequiaRR.css">
+</head>
+<body>
+    <header>
+        <div class="items-izq">
+            <img src="Recursos/Logo.jpg" alt="Logo ChickenGO">
+            <a href="#">Carta</a>
+            <a href="#">Promociones</a>
+            <a href="#">Delivery: <p>01 365 5287</p></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="RegistrarUsuario.html"><img src="Recursos/Usuario.jpg"></a></li>
+                <li><a href="RegistrarUsuario.html">Ingresa o Registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr class="linea-verde">
+    <main>
+        <div class="imagen_fondo">
+            <div class="contenido">
+                <img src="Recursos/PollitoConPapas.jpg" alt="PollitoConPapas" class="image">
+                <div class="cuadro1">
+                    <h1>POLLITO CON PAPAS</h1>
+                    <h3>
+                        1 pollo + 1L gaseosa + Ensalada + Papas + Helado
+                    </h3>
+                </div>
+                <div class="cuadro2">
+                    <h2>Tamaño de tu gaseosa:</h2>
+                    <button class="boton-100ml" onclick="selectSize(3)">100ml</button>
+                    <button class="boton-600ml" onclick="selectSize(5)">600ml</button>
+                    <button class="boton-1l" onclick="selectSize(8)">1l</button>
+                    <button class="boton-1500ml" onclick="selectSize(12)">1.500ml</button>
+                    <br>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="text" id="cantidad" oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+
+                    <br><br>
+                </div>
+                <div class="Acarrito">
+                    <p id="precioTotal"></p>
+                </div>
+                <button class="carrito" onclick="calcularPrecioTotal()">Agregar al carrito</button>
+                <br>
+            </div>
+        </div>
+    </main>
+    <hr class="linea-verde">
+    <footer>
+        <p>Pollería ChickenGO - Todos los derechos reservados &copy; 2023</p>
+    </footer>
+    <script src="RequiarRR.js"></script>
+</body>
+</html>
