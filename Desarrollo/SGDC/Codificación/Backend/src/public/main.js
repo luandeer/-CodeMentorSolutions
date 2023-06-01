@@ -19,11 +19,11 @@ botonRegistrar.addEventListener("submit", (event) =>
   // Obtener los valores ingresados por el usuario
   const nombres = document.getElementById("name").value;
   const apellidos = document.getElementById("apellidos").value;
-  const direccion = document.getElementById("direccion").value;
   const celular = document.getElementById("celular").value;
+  const direccion = document.getElementById("direccion").value;
 
   // Enviar los datos del formulario al servidor
-  const data = { nombres, apellidos, direccion, celular, password };
+  const data = { nombres, apellidos, celular, direccion, password };
 
   console.log(data);
   // Por ejemplo, usando la función fetch()
