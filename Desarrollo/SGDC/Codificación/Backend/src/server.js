@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')))
 
 // rutas
-app.use('/registro', routerCli);
+app.use('/registrar', routerCli);
 
 const port = 3333;
 app.listen(port, () => {
