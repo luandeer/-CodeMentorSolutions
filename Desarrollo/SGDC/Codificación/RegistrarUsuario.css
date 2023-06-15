@@ -71,22 +71,22 @@ header {
     text-decoration: none;
     margin-left: 30px;
 }
-nav ul {
+.items-der nav ul {
     align-items: center;
 	display: flex;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-nav ul li {
+.items-der nav ul li {
 	margin-right: 30px;
 }
-nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
+.items-der nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
     width: 20px;
     height: auto;
     margin-right: -8px;
 }
-nav ul li a {
+.items-der nav ul li a {
     text-align: center;
 	color: #FFFFFF;
 	text-decoration: none;
