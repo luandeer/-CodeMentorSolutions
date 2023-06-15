@@ -25,9 +25,6 @@ botonRegistrar.addEventListener("submit", (event) =>
   // Enviar los datos del formulario al servidor
   const data = { nombres, apellidos, celular, direccion, password };
 
-  console.log(data);
-  // Por ejemplo, usando la función fetch()
-
   // Ejemplo de solicitud fetch:
   fetch("/registrar", {
     method: "POST",
@@ -38,4 +35,5 @@ botonRegistrar.addEventListener("submit", (event) =>
   })
   .then( response => console.log(response) )
   .catch( error => console.error(error) );
+
 });

@@ -14,5 +14,9 @@ app.use('/registrar', routerCli);
 
 const port = 3333;
 app.listen(port, () => {
-   console.log(`Servidor en http://localhost:${port}`);
+   try{
+      console.log(`Servidor en http://localhost:${port}`);
+   } catch(error){
+      
+   }
 })
