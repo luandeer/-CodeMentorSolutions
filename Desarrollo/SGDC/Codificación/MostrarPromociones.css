@@ -99,13 +99,18 @@ header {
     text-decoration: none;
 }
 .promociones {
-	display: flex;
+    display: flex-inline;
 	flex-wrap: wrap;
 }
+
+.opcion{
+    display: flex;
+}
+
 .fondo h1{
     text-align: center;
-    font-size: 30px;/*El predeterminado es de 16px*/
-    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .menu-item {
     font-size: 18px;/*El predeterminado es de 16px*/
