@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta a la base de datos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Consulta a la base de datos</h1>
+
+    <div id="resultados">
+        <!-- Aquí se mostrarán los resultados de la consulta -->  
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'prueba.php', // Reemplaza 'consulta.php' con el nombre de tu archivo PHP
+                method: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    // Manipula los datos recibidos en 'response' y actualiza la página
+                    if (response.status === 'success') {
+                        // La consulta se ejecutó correctamente
+                        var resultadosHtml = '<ul>';
+                        for (var i = 0; i < response.data.length; i++) {
+                            resultadosHtml += '<li>' + response.data[i] + '</li>';
+                        }
+                        resultadosHtml += '</ul>';
+                        $('#resultados').html(resultadosHtml);
+                    } else {
+                        // Ocurrió un error en la consulta
+                        $('#resultados').html('Error en la consulta: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    // Manejo de errores
+                    $('#resultados').html('Error en la conexión');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
