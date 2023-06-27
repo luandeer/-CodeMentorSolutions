@@ -1,0 +1,41 @@
+-- Tabla Usuarios
+CREATE TABLE Usuarios (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  Nombre VARCHAR(50),
+  Apellido VARCHAR(50),
+  DNI VARCHAR(8),
+  Celular VARCHAR(15),
+  Direccion VARCHAR(100),
+  Distrito VARCHAR(50),
+  Contraseña VARCHAR(50)
+);
+
+-- Tabla Productos
+CREATE TABLE Productos (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  Nombre VARCHAR(100),
+  Descripcion VARCHAR(255),
+  PrecioRegular DECIMAL(10,2)
+);
+
+-- Tabla Promociones
+CREATE TABLE Promociones (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  Nombre VARCHAR(100),
+  Descripcion VARCHAR(255),
+  PrecioPromocional DECIMAL(10,2)
+);
+
+-- Tabla Pedidos
+CREATE TABLE Pedidos (
+  ID INT AUTO_INCREMENT PRIMARY KEY,
+  UsuarioID INT,
+  ProductoID INT,
+  PromocionID INT,
+  FechaPedido DATETIME,
+  Cantidad INT,
+  Total DECIMAL(10,2),
+  FOREIGN KEY (UsuarioID) REFERENCES Usuarios(ID),
+  FOREIGN KEY (ProductoID) REFERENCES Productos(ID),
+  FOREIGN KEY (PromocionID) REFERENCES Promociones(ID)
+);
