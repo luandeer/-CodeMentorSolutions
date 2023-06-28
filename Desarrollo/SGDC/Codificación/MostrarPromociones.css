@@ -1,46 +1,116 @@
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #FEF4E0;
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0;
 }
-
 header {
 	background-color: #362503;
-	color: #fff;
+	color: #FFFFFF;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px;
+    font-size: 18px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
+}
+.linea-verde{ /*Esta es un class en un <hr> para poner la línea verde*/
+    border: none;
+    margin: 0;
+    border-top: 5px solid #0C833A;
 }
 
-nav ul {
+.items-izq{
+    display: flex;
+    align-items: center;
+}
+.items-izq img{
+    width:12%;
+    height: auto;
+}
+.items-izq a p{
+    padding: 5px;
+    background-color: 	#8B0000;
+    color:white;
+    display:inline;
+    border: 1px solid 	#8B0000;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.items-izq a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.items-der nav ul {
+    align-items: center;
 	display: flex;
-	list-style: none;
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-
-nav li {
-	margin-right: 20px;
+.items-der nav ul li {
+    display: inline;
+	margin-right: 30px;
 }
-
-nav a {
-	color: #fff;
+.items-der nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
+    width: 20px;
+    height: auto;
+    margin-right: -8px;
+}
+.items-der nav ul li a {
+    text-align: center;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 
-main {
-	margin: 20px;
+.fondo{
+    background: #FEF4E0;
+    padding-bottom: 40px;
 }
 
-section {
-	
+.fondo nav{
+    position: relative;/*Eso me permite poder usar el left, rigth, botoom y top para mover un contenedor*/
+    left: 33%;
+    top: 60px;
+    border-radius: 10px;
+    display: inline-flex;
+    border: 1px solid #000000;
+    margin-bottom: 90px;
+    font-size: 20px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif;
+}
+.fondo nav ul{
+    padding-right: 20px;
+}
+.tipo-seccion{
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+}
+.tipo-seccion img{
+    align-items: center;
+    max-width: 60px;
+	height: auto;
+    
+}
+.tipo-seccion a{
+	color: #000000;
+    text-decoration: none;
+}
+.promociones {
 	display: flex;
 	flex-wrap: wrap;
 }
-
+.fondo h1{
+    text-align: center;
+    font-size: 30px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
+}
 .menu-item {
+    font-size: 18px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
+    border-radius: 15px;
 	flex: 1 0 30%;
 	margin: 10px;
 	padding: 10px;
@@ -48,19 +118,8 @@ section {
 	border: 1px solid #ddd;
 	text-align: center;
 }
-footer {
-	background-color: #ddd;
-	color: #333;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-}
-
 .menu-item img {
+    border-radius: 15px;
 	max-width: 50%;
 	height: auto;
 }
@@ -74,18 +133,20 @@ footer {
 }
 
 .menu-item button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-radius: 10px;
 	background-color: #0C833A;
 	color: #EFD426;
 	border: none;
 	padding: 10px 20px;
 	cursor: pointer;
 }
-
-main section h2{
-	width: 100%;
-}
-
-header img{
-	width: 6%;
-	height: auto;
+footer{
+    font-size: 19px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo de LetraS*/
+    background-color: #362503; /*Color Rojo Oscuro: #8B0000*/
+    padding: 29px;
+    color: #FFFFFF;
+    text-align: center;
 }

@@ -1,15 +1,15 @@
 document.getElementById("registrationForm").addEventListener("submit", function(event)
- {
+{
     event.preventDefault(); // Evita que el formulario se envíe
-  
+
     // Obtener los valores ingresados por el usuario
-    var name = document.getElementById("name").value;
-    var apellidos = document.getElementById("apellidos").value;
-    var direccion = document.getElementById("direccion").value;
-    var celular = document.getElementById("celular").value;
-    var password = document.getElementById("password").value;
-    var rep_password = document.getElementById("rep-password").value;
-    
+    const name = document.getElementById("name").value;
+    const apellidos = document.getElementById("apellidos").value;
+    const direccion = document.getElementById("direccion").value;
+    const celular = document.getElementById("celular").value;
+    const password = document.getElementById("password").value;
+    const rep_password = document.getElementById("rep-password").value;
+
     // Aquí puedes realizar validaciones adicionales si es necesario
     function validarCelular(celular) {
       const celularRegex = /^\d{9}$/;
@@ -53,7 +53,7 @@ if (!resultadoValidacionContraseña) {
   console.log("La contraseña no es válida");
 }
     // Enviar los datos del formulario al servidor
-    var data = {
+    const data = {
       name: name,
       apellidos: apellidos,
       direccion: direccion,
@@ -61,12 +61,9 @@ if (!resultadoValidacionContraseña) {
       rep_password: rep_password,
       password: password
     };
-  
-    // Aquí puedes realizar una solicitud AJAX para enviar los datos al servidor
-
 
     // Por ejemplo, usando la función fetch()
-  
+
     // Ejemplo de solicitud fetch:
     fetch("url_del_servidor", {
       method: "POST",
