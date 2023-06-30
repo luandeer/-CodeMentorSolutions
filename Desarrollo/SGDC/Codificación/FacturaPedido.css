@@ -67,83 +67,82 @@ header {
 }
 
 .fondo{
-    padding: 290px 0;
+    padding: 155px 0;
     background: #FEF4E0;
-    font-family: 'Times New Roman', Times, serif;
 }
 
-#opcion-entrega {
+
+#factura
+{
     font-family: 'Times New Roman', Times, serif;
-    width: 300px;
+    width: 550px;
     background-color: #FFFFFF;
-    border: 2px solid #000000;
-    border-radius: 10px;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 2%;
+    border-radius: 20px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -10%);
-    padding: 20px;
-    text-align: center;
+}
+#encabezado-factura
+{
+    display: flex;
+}
+#encabezado-factura img
+{
+    width: 100px;
+}
+#titulo-factura{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#apartado-fecha
+{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+}
+#fecha-factura {
+    margin-left: 15px;
 }
 
-#opcion-entrega label {
-    margin: 0 10px;
-}
-
-#botonConfirmarOpcionEntrega {
-    margin-top: 20px;
-    padding: 8px;
-    font-size: 16px;
-    
-    border-radius: 8px;
-    border: 1px solid #000000;
-}
-
-#opcion-entrega-delivery{
-    display: none;
-    width: 300px;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    padding: 20px 30px;
-    background-color: #FFFFFF;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-}
-
-#ubicacion-entrega {
+#contenido-factura {
     margin-top: 20px;
 }
 
-#ubicacion-entrega input {
-    margin-top: 8px;
+.info {
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+table {
     width: 100%;
+    border-collapse: collapse;
 }
 
-#datos-entrega input {
-    width: 100%;
-    margin-top: 8px;
+table th,
+table td {
+    padding: 5px;
+    border: 1px solid #000;
 }
 
-#opcion-entrega-tienda {
-    font-size: 23px;
-    display: none;
-    width: 300PX;
-    border: 2px solid #000000;
-    border-radius: 20px;
-    padding: 20px 25px;
-    background-color: #FFFFFF;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -80%);
-    text-align: center;
+table th {
+    text-align: left;
 }
 
-#opcion-entrega-tienda img{
-    width: 70%;
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
 }
+
 
 .boton-continuar {
     margin-top: 20px;
@@ -158,9 +157,6 @@ header {
     text-decoration: none;
     color: #000000;
 }
-
-
-
 
 
 
