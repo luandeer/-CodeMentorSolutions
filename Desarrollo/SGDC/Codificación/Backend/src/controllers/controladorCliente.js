@@ -1,24 +1,28 @@
 const conexion = require('../database/database');
 
 const registrarUsuario = (req, res) => {
-   let { nombres, apellidos, celular, direccion, password } = req.body;
+  let { nombres, apellidos, celular, direccion, password } = req.body;
 
-   const query = `INSERT INTO clientes (nombres, apellidos, celular, direccion, password) VALUES ("${nombres}", "${apellidos}", "${celular}", "${direccion}", "${password}")`;
+  const query = `INSERT INTO clientes (nombres, apellidos, celular, direccion, password) VALUES ("${nombres}", "${apellidos}", "${celular}", "${direccion}", "${password}")`;
 
-   conexion.query(query, (err, result) => {
-      if(err)
-         throw err;
+  conexion.query(query, (err, result) => {
+    if (err)
+      throw err;
 
-      // alert("Usuario registrado");
-   });
+    // alert("Usuario registrado");
+  });
 
-   res.redirect('/');
+  res.redirect('/');
 }
-const iniciarSesion = (req, res) => {
-  const { celular, password } = req.body;
 
-  const sql = 'SELECT * FROM clientes WHERE celular = ? AND password = ?';
-  const values = [celular, password];
+
+const iniciarSesion = (req, res) => {
+  const celular = req.body.celular;
+  const passwrd = req.body.password;
+  console.log(celular, passwrd);
+
+  const sql = 'SELECT * FROM clientes WHERE celular = ? AND passwrd = ?';
+  const values = [celular, passwrd];
 
   conexion.query(sql, values, (err, result) => {
     if (err) {
@@ -33,8 +37,8 @@ const iniciarSesion = (req, res) => {
   });
 };
 module.exports = {
-   registrarUsuario,
-   iniciarSesion,
+  registrarUsuario,
+  iniciarSesion,
 };
 
 
