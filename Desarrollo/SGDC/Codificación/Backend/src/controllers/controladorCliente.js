@@ -19,7 +19,6 @@ const registrarUsuario = (req, res) => {
 const iniciarSesion = (req, res) => {
   const celular = req.body.celular;
   const passwrd = req.body.password;
-  console.log(celular, passwrd);
 
   const sql = 'SELECT * FROM clientes WHERE celular = ? AND passwrd = ?';
   const values = [celular, passwrd];
