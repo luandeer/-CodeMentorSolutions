@@ -2,7 +2,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   event.preventDefault(); // Evita que el formulario se envíe
 
   // Obtener los valores ingresados por el usuario
-  let email = document.getElementById("celular").value;
+  let celular = document.getElementById("celular").value;
   let password = document.getElementById("password").value;
 
   // Enviar los datos del formulario al servidor
