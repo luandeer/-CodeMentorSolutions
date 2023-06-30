@@ -33,8 +33,8 @@ const iniciarSesion = (req, res) => {
   });
 };
 module.exports = {
-  registrarUsuario,
-  iniciarSesion,
+   registrarUsuario,
+   iniciarSesion,
 };
 
 
