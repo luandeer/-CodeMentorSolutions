@@ -14,8 +14,11 @@ const registrarUsuario = (req, res) => {
 
    res.redirect('/');
 }
+
+
 const iniciarSesion = (req, res) => {
   const { celular, password } = req.body;
+  console.log(celular, password);
 
   const sql = 'SELECT * FROM clientes WHERE celular = ? AND password = ?';
   const values = [celular, password];

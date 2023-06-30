@@ -1,4 +1,4 @@
-document.getElementById("registrationForm").addEventListener("submit", function(event) {
+document.getElementById("loginForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Evita que el formulario se envíe
 
   // Obtener los valores ingresados por el usuario
@@ -12,7 +12,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
   };
 
   // Realizar una solicitud AJAX al servidor para el inicio de sesión
-  fetch("/login", {
+  fetch("/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

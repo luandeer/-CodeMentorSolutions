@@ -2,7 +2,7 @@ const express = require('express');
 const routerCli = express.Router();
 const controladorCli = require('../controllers/controladorCliente');
 
-routerCli.post('/', controladorCli.registrarUsuario);
-routerCli.post('/login', controladorCli.iniciarSesion);
+routerCli.post('/Registro.html/registrar', controladorCli.registrarUsuario);
+routerCli.post('/', controladorCli.iniciarSesion);
 
 module.exports = routerCli;
