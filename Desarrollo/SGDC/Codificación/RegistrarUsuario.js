@@ -15,34 +15,28 @@ document.getElementById("registrationForm").addEventListener("submit", function(
       const celularRegex = /^\d{9}$/;
       return celularRegex.test(celular);
     }
-    function validarNombre(nombre) {
+    function validarNombre(name) {
       const nombreRegex = /^[a-zA-Z\s]+$/;
-      return nombreRegex.test(nombre);
+      return nombreRegex.test(name);
     }
     function validarDireccion(direccion) {
       const direccionRegex = /^[a-zA-Z0-9\s\-.,#áéíóúÁÉÍÓÚñÑ]+$/;
       return direccionRegex.test(direccion);
     }
     // Validación de la contraseña (mínimo 8 caracteres, al menos una letra mayúscula, una letra minúscula y un número)
-    function validarContraseña(contraseña) {
+    function validarContraseña(password) {
       const contraseñaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-      return contraseñaRegex.test(contraseña);
+      return contraseñaRegex.test(password);
     }
     // Ejemplo de uso
-const resultadoValidacionNombre = validarNombre(nombre);
-const resultadoValidacionApellido = validarNombre(apellido);
+const resultadoValidacionNombre = validarNombre(name);
 const resultadoValidacionCelular = validarCelular(celular);
 const resultadoValidacionDireccion = validarDireccion(direccion);
-const resultadoValidacionContraseña = validarContraseña(contraseña);
+const resultadoValidacionContraseña = validarContraseña(password);
 
 if (!resultadoValidacionNombre) {
   console.log("El nombre no es válido");
 }
-
-if (!resultadoValidacionApellido) {
-  console.log("El apellido no es válido");
-}
-
 if (!resultadoValidacionCelular) {
   console.log("El número de celular no es válido");
 }
