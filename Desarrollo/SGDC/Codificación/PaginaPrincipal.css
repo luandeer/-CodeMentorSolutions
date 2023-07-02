@@ -1,0 +1,142 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0;
+}
+header {
+	background-color: #362503;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+    font-size: 18px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
+}
+.linea-verde{ /*Esta es un class en un <hr> para poner la línea verde*/
+    border: none;
+    margin: 0;
+    border-top: 5px solid #0C833A;
+}
+
+.items-izq{
+    display: flex;
+    align-items: center;
+}
+
+.items-izq img {
+    width:120px;
+    margin-left: 20px;
+}
+
+.items-izq a p{
+    padding: 5px;
+    background-color: 	#8B0000;
+    color:white;
+    display:inline;
+    border: 1px solid 	#8B0000;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.items-izq a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 30px;
+}
+.items-der nav ul {
+    align-items: center;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.items-der nav ul li {
+    display: inline;
+	margin-right: 30px;
+}
+.items-der nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
+    width: 20px;
+    height: auto;
+    margin-right: -8px;
+}
+.items-der nav ul li a {
+    text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.fondo{
+    position: relative;
+    background-image: url("Recursos/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#principal {
+    justify-content: space-around;
+    display: flex;
+    padding: 8% 0;
+    margin-right: 20px;
+    align-items: center;
+}
+
+#pollo-principal {
+    position: relative;
+    left: 60px;
+}
+
+#pollo-principal img
+{
+    height: 500px;
+    border: 3px solid #8B0000;
+    border-radius: 50%;
+}
+
+#descripcion-principal {
+    position: relative;
+    right: -80px;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px 50px;
+    border: 2px solid #8B0000;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 80px; 
+}
+
+#descripcion-principal p {
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+#descripcion-principal a button{
+    
+    margin-top: 25px;
+    padding: 20px 40px;
+    border-radius: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    background-color: #0C833A;
+    color: #EFD426;
+}
+
+#titulos-principal {
+    margin-top: 60px;
+}
+
+#botones-principal {
+    margin-bottom: 80px;
+}
+
+footer{
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #362503;
+    padding: 29px;
+    color: #FFFFFF;
+    text-align: center;
+}
