@@ -5,10 +5,10 @@ botonRegistrar.addEventListener("submit", (event) =>
   event.preventDefault(); // Evita que el formulario se envíe por defecto a "/"
 
   // verificar si las contraseñas coinciden
-  const password = document.getElementById("password").value;
+  const passwrd = document.getElementById("password").value;
   const rep_password = document.getElementById("rep-password").value;
 
-  if(password !== rep_password){
+  if(passwrd !== rep_password){
     // Si las contraseñas no coinciden se manda un aviso y usamos return para terminar
     // el proceso
     alert("Las contraseñas no coinciden, por favor intente otra vez.");
@@ -23,7 +23,7 @@ botonRegistrar.addEventListener("submit", (event) =>
   const direccion = document.getElementById("direccion").value;
 
   // Enviar los datos del formulario al servidor
-  const data = { nombres, apellidos, celular, direccion, password };
+  const data = { nombres, apellidos, celular, direccion, passwrd };
 
   // Ejemplo de solicitud fetch:
   fetch("/RegistrarUsuario.html", {

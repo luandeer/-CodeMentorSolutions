@@ -1,9 +1,9 @@
 const conexion = require('../database/database');
 
 const registrarUsuario = (req, res) => {
-  let { nombres, apellidos, celular, direccion, password } = req.body;
-
-  const query = `INSERT INTO clientes (nombres, apellidos, celular, direccion, password) VALUES ("${nombres}", "${apellidos}", "${celular}", "${direccion}", "${password}")`;
+  let { nombres, apellidos, celular, direccion, passwrd } = req.body;
+  console.log(passwrd);
+  const query = `INSERT INTO clientes (nombres, apellidos, celular, direccion, passwrd) VALUES ("${nombres}", "${apellidos}", "${celular}", "${direccion}", "${passwrd}")`;
 
   conexion.query(query, (err, result) => {
     if (err)
@@ -17,7 +17,7 @@ const registrarUsuario = (req, res) => {
 
 const iniciarSesion = (req, res) => {
   const celular = req.body.celular;
-  const passwrd = req.body.password;
+  const passwrd = req.body.passwrd;
 
   const sql = 'SELECT * FROM clientes WHERE celular = ? AND passwrd = ?';
   const values = [celular, passwrd];
