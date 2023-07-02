@@ -39,3 +39,34 @@ CREATE TABLE Pedidos (
   FOREIGN KEY (ProductoID) REFERENCES Productos(ID),
   FOREIGN KEY (PromocionID) REFERENCES Promociones(ID)
 );
+
+
+CREATE TABLE CarritoDeCompras (
+    CarritoID INT AUTO_INCREMENT PRIMARY KEY,
+    UsuarioID INT,
+    ProductoID INT,
+    Cantidad INT,
+    FOREIGN KEY (UsuarioID) REFERENCES Usuarios(ID),
+    FOREIGN KEY (ProductoID) REFERENCES Productos(ID)
+);
+
+
+CREATE TABLE EstadoPedido (
+    EstadoID INT AUTO_INCREMENT PRIMARY KEY,
+    NombreEstado VARCHAR(50)
+);
+
+CREATE TABLE DetallePedido (
+    DetalleID INT AUTO_INCREMENT PRIMARY KEY,
+    PedidoID INT,
+    ProductoID INT,
+    Cantidad INT,
+    PrecioUnitario DECIMAL(10, 2),
+    FOREIGN KEY (PedidoID) REFERENCES Pedidos(ID),
+    FOREIGN KEY (ProductoID) REFERENCES Productos(ID)
+);
+
+CREATE TABLE MetodosPago (
+    MetodoID INT AUTO_INCREMENT PRIMARY KEY,
+    NombreMetodo VARCHAR(50)
+);
