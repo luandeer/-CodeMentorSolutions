@@ -12,6 +12,13 @@
     Descripción: Actualización de Código
 ..................................................
 -->
+<!--
+..................................................
+    Autor: Holiver Jhunior Ccora Quispe
+    Fecha: 18/06/2023
+    Descripción: Actualización de Código
+..................................................
+-->
 
 <!DOCTYPE html>
 <hmtl lang="es">
@@ -23,14 +30,15 @@
     <body>
         <header>
             <div class="items-izq">
-                <img  src="Recursos/Logo.jpg" alt="Logo ChickenGO">
-                <a href="#">Carta</a>
+                <a href="PaginaPrincipal.html"><img  src="Recursos/Logo.jpg" alt="Logo ChickenGO"></a>
+                <a href="MostrarPromociones.html#opcion-pollos">Carta</a>
                 <a href="MostrarPromociones.html">Promociones</a>
-                <a href="#">Delivery: <p>886765423</p></a>
+                <a href="#">Delivery: <p>01 365 5287</p></a>
             </div>
             <div class = "items-der">
                 <nav>
                     <ul>
+                        <li><a href="SedesPolleria.html">Sedes</a></li>
                         <li><a href="RegistrarUsuario.html"><img src="Recursos/Usuario.jpg" alt="Logo Usuario"></a></li>
                         <li><a href="RegistrarUsuario.html">Ingresa o Registrate</a></li>
                     </ul>
@@ -43,74 +51,176 @@
                 <nav>
                     <ul>
                         <li class="tipo-seccion">
-                            <img src="Recursos/LogoPromociones.jpg" alt="Logo de Promociones"><br>
-                            <a href="#">Promociones</a>
+                            <a href="#opcion-promociones"><img src="Recursos/LogoPromociones.jpg" alt="Logo de Promociones"><br>Promociones</a>
                         </li>
                         <li class="tipo-seccion">
-                            <img src="Recursos/LogoPollos.jpg" alt="Logo de Pollos"><br>
-                            <a href="#">Pollos</a>
+                            <a href="#opcion-pollos"><img src="Recursos/LogoPollos.jpg" alt="Logo de Pollos"><br>Pollos</a>
                         </li>
                         <li class="tipo-seccion">
-                            <img src="Recursos/LogoBroaster.jpg" alt="Logo de Broaster"><br>
-                            <a href="#">Broaster</a>
+                            <a href="#opcion-broaster"><img src="Recursos/LogoBroaster.jpg" alt="Logo de Broaster"><br>Broaster</a>
                         </li>
                         <li class="tipo-seccion">
-                            <img src="Recursos/LogoEnsalada.jpg" alt="Logo de Ensaladas"><br>
-                            <a href="#">Ensaladas</a>
+                            <a href="#opcion-ensaladas"><img src="Recursos/LogoEnsalada.jpg" alt="Logo de Ensaladas"><br>Ensaladas</a>
                         </li>
                         <li class="tipo-seccion">
-                            <img src="Recursos/LogoBebidas.jpg" alt="Logo de Bebidas"><br>
-                            <a href="#">Bebidas</a>
+                            <a href="#opcion-bebidas"><img src="Recursos/LogoBebidas.jpg" alt="Logo de Bebidas"><br>Bebidas</a>
                         </li>
                         <li class="tipo-seccion">
-                            <img src="Recursos/LogoParrillas.jpg" alt="Logo de Parrillas"><br>
-                            <a href="#">Parrillas</a>
+                            <a href="#opcion-parrillas"><img src="Recursos/LogoParrillas.jpg" alt="Logo de Parrillas"><br>Parrillas</a>
                         </li>
                     </ul>
                 </nav>
-                <h1>PROMOCIONES</h1>
+                
                 <div class="promociones">
-                    <div class="menu-item">
-                        <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
-                        <h3>Pollito con Papas</h3>
-                        <p>Delicioso Pollito con Papas.</p>
-                        <p class="precio">$5.99</p>
-                        <button>Elegir</button>
+                    <h1 id="opcion-promociones">PROMOCIONES</h1>
+                    <div class="opcion">
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3 class="titulo-producto">Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$5.99</p>
+                            <a href="DetallesPedido.html"><button onclick="recogerDetalles()">Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3 class="titulo-producto">Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$5.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3 class="titulo-producto">Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$5.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
-                        <h3>Pollito con Papas</h3>
-                        <p>Delicioso Pollito con Papas.</p>
-                        <p class="precio">$7.99</p>
-                        <button>Elegir</button>
+
+                    <h1 id="opcion-pollos" >POLLOS</h1>
+                    <div class="opcion">
+                        
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$7.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$5.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$5.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
-                        <h3>Pollito con Papas</h3>
-                        <p>Delicioso Pollito con Papas.</p>
-                        <p class="precio">$4.99</p>
-                        <button>Elegir</button>
+                    
+                    <h1 id="opcion-broaster">BROASTER</h1>
+                    <div class="opcion">
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$4.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$4.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$4.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
-                        <h3>Pollito con Papas</h3>
-                        <p>Delicioso Pollito con Papas.</p>
-                        <p class="precio">$10.99</p>
-                        <button>Elegir</button>
+                    
+                    <h1  id="opcion-ensaladas">ENSALADAS</h1>
+                    <div class="opcion">
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
-                        <h3>Pollito con Papas</h3>
-                        <p>Delicioso Pollito con Papas.</p>
-                        <p class="precio">$10.99</p>
-                        <button>Elegir</button>
+                    
+                    <h1 id="opcion-bebidas">BEBIDAS</h1>
+                    <div class="opcion">
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
                     </div>
-                    <div class="menu-item">
-                        <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
-                        <h3>Pollito con Papas</h3>
-                        <p>Delicioso Pollito con Papas.</p>
-                        <p class="precio">$10.99</p>
-                        <button>Elegir</button>
+                    
+                    <h1 id="opcion-parrillas">PARRILLAS</h1>
+                    <div class="opcion">
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
+                        <div class="menu-item">
+                            <img src="Recursos/PollitoConPapas.jpg" alt="Producto en Promoción">
+                            <h3>Pollito con Papas</h3>
+                            <p>Delicioso Pollito con Papas.</p>
+                            <p class="precio">$10.99</p>
+                            <a href="DetallesPedido.html"><button>Elegir</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
