@@ -26,7 +26,7 @@ botonRegistrar.addEventListener("submit", (event) =>
   const data = { nombres, apellidos, celular, direccion, password };
 
   // Ejemplo de solicitud fetch:
-  fetch("/Registro.html/registrar", {
+  fetch("/RegistrarUsuario.html", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

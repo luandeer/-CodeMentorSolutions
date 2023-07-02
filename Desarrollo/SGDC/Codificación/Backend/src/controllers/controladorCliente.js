@@ -15,7 +15,6 @@ const registrarUsuario = (req, res) => {
   res.redirect('/');
 }
 
-
 const iniciarSesion = (req, res) => {
   const celular = req.body.celular;
   const passwrd = req.body.password;
@@ -35,6 +34,7 @@ const iniciarSesion = (req, res) => {
     }
   });
 };
+
 module.exports = {
   registrarUsuario,
   iniciarSesion,
