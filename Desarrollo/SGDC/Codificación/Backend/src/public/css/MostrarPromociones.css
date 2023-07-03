@@ -23,12 +23,10 @@ header {
     display: flex;
     align-items: center;
 }
-
-.items-izq img {
-    width:120px;
-    margin-left: -10px;
+.items-izq img{
+    width:12%;
+    height: auto;
 }
-
 .items-izq a p{
     padding: 5px;
     background-color: 	#8B0000;
@@ -101,18 +99,13 @@ header {
     text-decoration: none;
 }
 .promociones {
-    display: flex-inline;
+	display: flex;
 	flex-wrap: wrap;
 }
-
-.opcion{
-    display: flex;
-}
-
 .fondo h1{
     text-align: center;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
 }
 .menu-item {
     font-size: 18px;/*El predeterminado es de 16px*/
