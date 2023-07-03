@@ -27,19 +27,23 @@ botonRegistrar.addEventListener("submit", (event) =>
   const resultadoValidacionNombre = validarNombre(nombres);
   const resultadoValidacionCelular = validarCelular(celular);
   const resultadoValidacionDireccion = validarDireccion(direccion);
-  const resultadoValidacionContraseña = validarContraseña(passwrd);
+  const resultadoValidacionContrasenya = validarContrasenya(passwrd);
 
   if (!resultadoValidacionNombre) {
     console.log("El nombre no es válido");
+    return
   }
   if (!resultadoValidacionCelular) {
     console.log("El número de celular no es válido");
+    return
   }
   if (!resultadoValidacionDireccion) {
     console.log("La dirección no es válida");
+    return
   }
-  if (!resultadoValidacionContraseña) {
+  if (!resultadoValidacionContrasenya) {
     console.log("La contraseña no es válida");
+    return
   }
 
   // Enviar los datos del formulario al servidor
@@ -53,7 +57,10 @@ botonRegistrar.addEventListener("submit", (event) =>
     },
     body: JSON.stringify(data)
   })
-  .then( response => console.log(response) )
+  .then( response => {
+    if (response.ok)
+    window.location.href = "index.html";
+  })
   .catch( error => console.error(error) );
 
 });
@@ -70,8 +77,7 @@ function validarDireccion(direccion) {
   const direccionRegex = /^[a-zA-Z0-9\s\-.,#áéíóúÁÉÍÓÚñÑ]+$/;
   return direccionRegex.test(direccion);
 }
-// Validación de la contraseña (mínimo 8 caracteres, al menos una letra mayúscula, una letra minúscula y un número)
-function validarContraseña(password) {
-  const contraseñaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+function validarContrasenya(password) {
+  const contraseñaRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$/;
   return contraseñaRegex.test(password);
 }

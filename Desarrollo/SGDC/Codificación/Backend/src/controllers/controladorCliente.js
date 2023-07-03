@@ -2,17 +2,14 @@ const conexion = require('../database/database');
 
 const registrarUsuario = (req, res) => {
   let { nombres, apellidos, celular, direccion, passwrd } = req.body;
-  console.log(passwrd);
   const query = `INSERT INTO clientes (nombres, apellidos, celular, direccion, passwrd) VALUES ("${nombres}", "${apellidos}", "${celular}", "${direccion}", "${passwrd}")`;
 
   conexion.query(query, (err, result) => {
     if (err)
       throw err;
 
-    // alert("Usuario registrado");
+    res.status(200).json({ message: 'Registro exitoso' });
   });
-
-  res.redirect('/');
 }
 
 const iniciarSesion = (req, res) => {

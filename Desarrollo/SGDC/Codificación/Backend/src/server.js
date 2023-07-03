@@ -10,13 +10,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')))
 
 // rutas
-app.use('/registrar', routerCli);
+app.use('/', routerCli);
 
 const port = 3333;
 app.listen(port, () => {
    try{
       console.log(`Servidor en http://localhost:${port}`);
    } catch(error){
-      
+
    }
 })

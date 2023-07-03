@@ -53,8 +53,8 @@ header {
     align-items: center;
 }
 .items-izq img{
-    width:12%;
-    height: auto;
+    width:120px;
+    margin-left: -10px;
 }
 .items-izq a p{
     padding: 5px;
