@@ -1,4 +1,3 @@
-
 function recogerDetalles()
 {
   //Solo me recolecta los datos del primer producto, ya que solo recolecta los datos del primer class
@@ -9,7 +8,7 @@ function recogerDetalles()
     nombre: nombreProducto,
     precio: precioProducto,
   };
-  alert("Hola" + producto.nombre + producto.precio);
+
   localStorage.setItem("datosProducto",JSON.stringify(producto));
 
 }
