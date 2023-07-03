@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<hmtl lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>ChickenGO - Promociones</title>
+        <link rel="stylesheet" type="text/css" href="css/DetallesPedido.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="items-izq">
+                <a href="index.html"><img  src="img/Logo.jpg" alt="Logo ChickenGO"></a>
+                <a href="MostrarPromociones.html#opcion-pollos">Carta</a>
+                <a href="MostrarPromociones.html">Promociones</a>
+                <a href="#">Delivery: <p>01 365 5287</p></a>
+            </div>
+            <div class = "items-der">
+                <nav>
+                    <ul>
+                        <li><a href="RegistrarUsuario.html"><img src="img/Usuario.jpg" alt="Logo Usuario"></a></li>
+                        <li><a href="RegistrarUsuario.html">Ingresa o Registrate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr class="linea-verde">
+        <main>
+            <div class = "fondo">
+                <div class="lista-detalles-producto">
+                    <h2>USTED ELIGIÓ: </h2>
+                    <img src="img/PollitoConPapas.jpg" alt="Producto elegido">
+                    <p>Nombre: <span id="nombreProducto"></span></p>
+                    <p>Precio: <span id="precioProducto"></span></p>
+                    <button class="boton-volver"><a href="OpcionEntrega.html">Confirmar</a></button>
+                    <button class="boton-volver" onclick="removerLocalStorage()"><a href="MostrarPromociones.html">Cancelar</a></button>
+                </div>
+            </div>
+        </main>
+        <hr class="linea-verde">
+        <footer>
+            <p>Pollería ChickenGO - Todos los derechos reservados &copy; 2023</p>
+        </footer>
+        <script src="js/DetallesPedido.js"></script>
+    </body>
+</hmtl>
