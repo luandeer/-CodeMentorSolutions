@@ -9,7 +9,7 @@ function recogerDetalles()
     nombre: nombreProducto,
     precio: precioProducto,
   };
-
+  
   localStorage.setItem("datosProducto",JSON.stringify(producto));
 
 }
