@@ -68,7 +68,7 @@ header {
 
 .fondo{
     position: relative;
-    background-image: url("Recursos/fondo.jpg");
+    background-image: url("../img/fondo.jpg");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

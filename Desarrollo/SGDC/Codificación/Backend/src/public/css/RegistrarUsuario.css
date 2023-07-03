@@ -21,7 +21,7 @@ header {
 }
 .imagen_fondo {
     position: relative;
-    background-image: url("Recursos/ColorFondo.png");
+    background-image: url("../img/ColorFondo.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
