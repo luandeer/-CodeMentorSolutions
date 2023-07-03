@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0;
+}
+header {
+	background-color: #362503;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+    font-size: 18px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
+}
+.linea-verde{ /*Esta es un class en un <hr> para poner la línea verde*/
+    border: none;
+    margin: 0;
+    border-top: 5px solid #0C833A;
+}
+
+.items-izq{
+    display: flex;
+    align-items: center;
+}
+
+.items-izq img {
+    width:120px;
+    margin-left: -10px;
+}
+
+.items-izq a p{
+    padding: 5px;
+    background-color: 	#8B0000;
+    color:white;
+    display:inline;
+    border: 1px solid 	#8B0000;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.items-izq a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.items-der nav ul {
+    align-items: center;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.items-der nav ul li {
+    display: inline;
+	margin-right: 30px;
+}
+.items-der nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
+    width: 20px;
+    height: auto;
+    margin-right: -8px;
+}
+.items-der nav ul li a {
+    text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.fondo{
+    padding: 155px 0;
+    background: #FEF4E0;
+}
+
+
+#factura
+{
+    font-family: 'Times New Roman', Times, serif;
+    width: 550px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 2%;
+    border-radius: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+#encabezado-factura
+{
+    display: flex;
+}
+#encabezado-factura img
+{
+    width: 100px;
+}
+#titulo-factura{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+#apartado-fecha
+{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+}
+#fecha-factura {
+    margin-left: 15px;
+}
+
+#contenido-factura {
+    margin-top: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+table th {
+    text-align: left;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.boton-continuar {
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+.boton-continuar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+footer{
+    font-size: 19px;/*El predeterminado es de 16px*/
+    font-family: 'Times New Roman', Times, serif; /*Tipo de LetraS*/
+    background-color: #362503; /*Color Rojo Oscuro: #8B0000*/
+    padding: 29px;
+    color: #FFFFFF;
+    text-align: center;
+}

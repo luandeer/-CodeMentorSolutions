@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<hmtl lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>ChickenGO - Promociones</title>
+        <link rel="stylesheet" type="text/css" href="css/OpcionEntrega.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="items-izq">
+                <a href="index.html"><img  src="img/Logo.jpg" alt="Logo ChickenGO"></a>
+                <a href="MostrarPromociones.html#opcion-pollos">Carta</a>
+                <a href="MostrarPromociones.html">Promociones</a>
+                <a href="#">Delivery: <p>01 365 5287</p></a>
+            </div>
+            <div class = "items-der">
+                <nav>
+                    <ul>
+                        <li><a href="SedesPolleria.html">Sedes</a></li>
+                        <li><a href="RegistrarUsuario.html"><img src="img/Usuario.jpg" alt="Logo Usuario"></a></li>
+                        <li><a href="RegistrarUsuario.html">Ingresa o Registrate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <hr class="linea-verde">
+        <main>
+            <div class = "fondo">
+                <div id="opcion-entrega">
+                    <h2>OPCIÓN DE ENTREGA: </h2>
+                    <label><input type="radio" id="opcionDelivery" name="opcionEntrega" value="opcion1" >Delivery</label>
+                    <label><input type="radio" id="opcionTienda" name="opcionEntrega" value="opcion2" >Recojo en Tienda</label><br>
+                    <button type="submit" id="botonConfirmarOpcionEntrega" onclick="mostrarDetallesEntrega()">Confirmar</button>
+                </div>
+    
+                <div id="opcion-entrega-delivery">
+                    <form>
+                        <div id="ubicacion-entrega">
+                            <label>Ingresa tu Ubicación<br><input type="text" name="ingresa-ubicacion" required></label>
+                        </div>
+    
+                        <div id="datos-entrega">
+                            <p><strong>DATOS DEL RECEPTOR DEL PEDIDO: </strong></p>
+                            <label>Nombres y apellidos: <br><input type="text" name="datosReceptor" required></label><br><br>
+                            <label>DNI: <br><input type="text" name="dniReceptor" required></label>
+                            <button type="submit" class="boton-continuar"><a href="FacturaPedido.html">Continuar</a></button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="opcion-entrega-tienda">
+                    <p><strong>Listo, su pedido está siendo preparado !!</strong></p>
+                    <img src="img/pollo-animado.png" alt="Pollo Animado"><br>
+                    <button class="boton-continuar" type="submit"><a href="FacturaPedido.html">Continuar</a></button>
+                </div>
+            </div>
+        </main>
+        <hr class="linea-verde">
+        <footer>
+            <p>Pollería ChickenGO - Todos los derechos reservados &copy; 2023</p>
+        </footer>
+        <script src="js/OpcionEntrega.js"></script>
+    </body>
+</hmtl>
