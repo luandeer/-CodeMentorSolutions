@@ -1,0 +1,85 @@
+-- Insertar valores en la tabla "Usuarios"
+INSERT INTO Usuarios (Nombre, Apellido, DNI, Celular, Direccion, Distrito, Contraseña)
+VALUES
+  ('Juan', 'Perez', '12345678', '987654321', 'Calle Principal 123', 'Distrito A', 'contraseña1'),
+  ('María', 'López', '87654321', '123456789', 'Avenida Central 456', 'Distrito B', 'contraseña2'),
+  ('Pedro', 'García', '56789012', '987654321', 'Calle Secundaria 789', 'Distrito A', 'contraseña3'),
+  ('Ana', 'Martínez', '34567890', '123456789', 'Avenida Principal 456', 'Distrito C', 'contraseña4'),
+  ('Carlos', 'Sánchez', '98765432', '987654321', 'Calle Central 789', 'Distrito B', 'contraseña5'),
+  ('Laura', 'Ramírez', '23456789', '123456789', 'Avenida Secundaria 456', 'Distrito A', 'contraseña6'),
+  ('Luis', 'Gómez', '78901234', '987654321', 'Calle Principal 789', 'Distrito C', 'contraseña7'),
+  ('Sofía', 'Hernández', '45678901', '123456789', 'Avenida Central 456', 'Distrito B', 'contraseña8'),
+  ('Javier', 'Torres', '90123456', '987654321', 'Calle Secundaria 789', 'Distrito A', 'contraseña9'),
+  ('Carmen', 'Díaz', '67890123', '123456789', 'Avenida Principal 456', 'Distrito C', 'contraseña10');
+
+-- Insertar valores en la tabla "Productos"
+INSERT INTO Productos (Nombre, Descripcion, PrecioRegular)
+VALUES
+  ('Pollo a la Brasa Entero', 'Delicioso pollo a la brasa entero con papas y ensalada', 29.99),
+  ('1/2 Pollo a la Brasa', 'Medio pollo a la brasa con papas y ensalada', 15.99),
+  ('Combo Familiar', 'Pollo a la brasa entero, papas, ensalada y gaseosas', 49.99),
+  ('Pollo a la Brasa para Dos', 'Pollo a la brasa con papas y ensalada para dos personas', 27.99),
+  ('1/4 Pollo a la Brasa', 'Cuarto de pollo a la brasa con papas y ensalada', 9.99),
+  ('Alitas de Pollo a la Brasa', 'Deliciosas alitas de pollo a la brasa con salsa BBQ', 12.99),
+  ('Brochetas de Pollo a la Brasa', 'Sabrosas brochetas de pollo a la brasa con vegetales', 14.99),
+  ('Combo Infantil', 'Pollo a la brasa con papas y jugo para niños', 8.99),
+  ('Ensalada de Pollo', 'Ensalada fresca con pollo a la brasa desmenuzado', 7.99),
+  ('Papas Fritas', 'Crujientes papas fritas', 3.99);
+
+-- Insertar valores en la tabla "Promociones"
+INSERT INTO Promociones (Nombre, Descripcion, PrecioPromocional)
+VALUES
+  ('Combo Especial', 'Pollo a la brasa entero, papas, ensalada, gaseosas y postre', 39.99),
+  ('Familia Feliz', '2 pollos a la brasa enteros, papas, ensalada y gaseosas', 59.99),
+  ('Dúo Perfecto', '1 pollo a la brasa entero, 1/2 pollo a la brasa, papas y ensalada', 37.99),
+  ('Oferta del Día', 'Pollo a la brasa entero con papas y gaseosa por tiempo limitado', 24.99),
+  ('Combo Amigos', '2 pollos a la brasa enteros, papas, ensalada y cervezas', 69.99),
+  ('Especialidades del Chef', 'Variedad de pollos a la brasa especiales del chef', 34.99),
+  ('Menú Ejecutivo', '1/4 pollo a la brasa, papas, ensalada y bebida para almuerzo', 11.99),
+  ('Pollo al Horno', 'Pollo asado al horno con papas y ensalada', 19.99),
+  ('Pollo a la Brasa Picante', 'Pollo a la brasa con salsa picante, papas y ensalada', 16.99),
+  ('Combo Light', 'Pollo a la brasa entero, ensalada y agua mineral', 32.99);
+
+-- Insertar valores en la tabla "Pedidos"
+INSERT INTO Pedidos (UsuarioID, ProductoID, PromocionID, FechaPedido, Cantidad, Total)
+VALUES
+  (1, 1, NULL, '2023-06-01 10:30:00', 2, 59.98),
+  (2, 3, NULL, '2023-06-02 13:15:00', 1, 49.99),
+  (3, 5, NULL, '2023-06-03 18:45:00', 3, 29.97),
+  (4, 2, 1, '2023-06-04 11:00:00', 1, 39.99),
+  (5, 4, NULL, '2023-06-05 14:30:00', 2, 55.98),
+  (6, 7, NULL, '2023-06-06 19:20:00', 1, 14.99),
+  (7, 10, NULL, '2023-06-07 12:45:00', 2, 7.98),
+  (8, 8, 4, '2023-06-08 15:10:00', 1, 24.99),
+  (9, 6, NULL, '2023-06-09 20:00:00', 2, 25.98),
+  (10, 9, NULL, '2023-06-10 11:30:00', 1, 7.99);
+
+-- Insertar valores en la tabla CarritoDeCompras
+INSERT INTO CarritoDeCompras (UsuarioID, ProductoID, Cantidad)
+VALUES
+    (1, 1, 2),
+    (1, 3, 1),
+    (2, 2, 3),
+    (3, 4, 1);
+
+-- Insertar valores en la tabla EstadoPedido
+INSERT INTO EstadoPedido (NombreEstado)
+VALUES
+    ('En proceso'),
+    ('Enviado'),
+    ('Entregado');
+
+-- Insertar valores en la tabla DetallePedido
+INSERT INTO DetallePedido (PedidoID, ProductoID, Cantidad, PrecioUnitario)
+VALUES
+    (1, 1, 2, 15.99),
+    (1, 3, 1, 10.50),
+    (2, 2, 3, 8.75),
+    (3, 4, 1, 12.25);
+
+-- Insertar valores en la tabla MetodosPago
+INSERT INTO MetodosPago (NombreMetodo)
+VALUES
+    ('Tarjeta de crédito'),
+    ('Pago en efectivo'),
+    ('Transferencia bancaria');
