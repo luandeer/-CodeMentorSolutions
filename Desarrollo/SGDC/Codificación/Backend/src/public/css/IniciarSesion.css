@@ -21,7 +21,7 @@ header {
 }
 .imagen_fondo {
     position: relative;
-    background-image: url("Recursos/ColorFondo.png");
+    background-image: url("../img/ColorFondo.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -52,9 +52,9 @@ header {
     display: flex;
     align-items: center;
 }
-.items-izq img {
-    width:120px;
-    margin-left: -10px;
+.items-izq img{
+    width:12%;
+    height: auto;
 }
 .items-izq a p{
     padding: 5px;

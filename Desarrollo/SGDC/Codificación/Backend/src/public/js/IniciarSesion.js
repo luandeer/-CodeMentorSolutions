@@ -1,18 +1,18 @@
-document.getElementById("registrationForm").addEventListener("submit", function(event) {
+document.getElementById("loginForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Evita que el formulario se envíe
 
   // Obtener los valores ingresados por el usuario
-  let email = document.getElementById("celular").value;
-  let password = document.getElementById("password").value;
+  let celular = document.getElementById("celular").value;
+  let passwrd = document.getElementById("password").value;
 
   // Enviar los datos del formulario al servidor
   let data = {
     celular: celular,
-    password: password
+    password: passwrd
   };
 
   // Realizar una solicitud AJAX al servidor para el inicio de sesión
-  fetch("/login", {
+  fetch("/IniciarSesion.html", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -24,7 +24,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     if (response.ok) {
       // Inicio de sesión exitoso
       alert("¡Inicio de sesión exitoso!");
-      window.location.href = "MostrarPromociones.html"; 
+      window.location.href = "MostrarPromociones.html";
     } else {
       // Credenciales inválidas
       alert("Credenciales inválidas. Por favor, verifique su celular y contraseña.");

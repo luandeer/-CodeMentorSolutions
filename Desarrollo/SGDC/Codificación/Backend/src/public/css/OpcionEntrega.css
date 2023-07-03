@@ -67,88 +67,108 @@ header {
 }
 
 .fondo{
+    padding: 290px 0;
     background: #FEF4E0;
-    padding-bottom: 40px;
-}
-
-.fondo nav{
-    position: relative;/*Eso me permite poder usar el left, rigth, botoom y top para mover un contenedor*/
-    left: 33%;
-    top: 60px;
-    border-radius: 10px;
-    display: inline-flex;
-    border: 1px solid #000000;
-    margin-bottom: 90px;
-    font-size: 20px;/*El predeterminado es de 16px*/
     font-family: 'Times New Roman', Times, serif;
 }
-.fondo nav ul{
-    padding-right: 20px;
-}
-.tipo-seccion{
+
+#opcion-entrega {
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    padding: 20px;
     text-align: center;
-    display: inline-block;
-    margin-right: 20px;
 }
-.tipo-seccion img{
-    align-items: center;
-    max-width: 60px;
-	height: auto;
+
+#opcion-entrega label {
+    margin: 0 10px;
+}
+
+#botonConfirmarOpcionEntrega {
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 16px;
     
-}
-.tipo-seccion a{
-	color: #000000;
-    text-decoration: none;
-}
-.promociones {
-    display: flex-inline;
-	flex-wrap: wrap;
+    border-radius: 8px;
+    border: 1px solid #000000;
 }
 
-.opcion{
-    display: flex;
+#opcion-entrega-delivery{
+    display: none;
+    width: 300px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 20px 30px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
 }
 
-.fondo h1{
+#ubicacion-entrega {
+    margin-top: 20px;
+}
+
+#ubicacion-entrega input {
+    margin-top: 8px;
+    width: 100%;
+}
+
+#datos-entrega input {
+    width: 100%;
+    margin-top: 8px;
+}
+
+#opcion-entrega-tienda {
+    font-size: 23px;
+    display: none;
+    width: 300PX;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 20px 25px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
     text-align: center;
-    font-size: 30px;
+}
+
+#opcion-entrega-tienda img{
+    width: 70%;
+}
+
+.boton-continuar {
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
-}
-.menu-item {
-    font-size: 18px;/*El predeterminado es de 16px*/
-    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
-    border-radius: 15px;
-	flex: 1 0 30%;
-	margin: 10px;
-	padding: 10px;
-	background-color: #FEF4E0;
-	border: 1px solid #ddd;
-	text-align: center;
-}
-.menu-item img {
-    border-radius: 15px;
-	max-width: 50%;
-	height: auto;
+    border-radius: 8px;
+    border: 1px solid #000000;
 }
 
-.menu-item h3 {
-	margin-top: 0;
+.boton-continuar a {
+    text-decoration: none;
+    color: #000000;
 }
 
-.menu-item p {
-	margin-bottom: 10px;
-}
 
-.menu-item button {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    border-radius: 10px;
-	background-color: #0C833A;
-	color: #EFD426;
-	border: none;
-	padding: 10px 20px;
-	cursor: pointer;
-}
+
+
+
+
+
+
+
+
+
 footer{
     font-size: 19px;/*El predeterminado es de 16px*/
     font-family: 'Times New Roman', Times, serif; /*Tipo de LetraS*/
