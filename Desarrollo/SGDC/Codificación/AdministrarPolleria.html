@@ -1,0 +1,70 @@
+<!--
+..................................................
+    Autor: Holiver Jhunior Ccora Quispe
+    Fecha: 31/05/2023
+    Descripción: Creación de Código
+..................................................
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ChickenGO - Panel de Administración</title>
+		<link rel="stylesheet" href="AdministrarPolleria.css">
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="items-izq">
+				<a href="PaginaPrincipal.html"><img  src="Recursos/Logo.jpg" alt="Logo ChickenGO"></a>
+                <a href="MostrarPromociones.html#opcion-pollos">Carta</a>
+                <a href="MostrarPromociones.html">Promociones</a>
+                <a href="#">Delivery: <p>01 365 5287</p></a>
+			</div>
+			<div class="items-der">
+				<nav>
+					<ul>
+						<li><a href="RegistrarUsuario.html"><img src="Recursos/Usuario.jpg"></a></li>
+						<li><a href="RegistrarUsuario.html">Ingresa o Registrate</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="secciones">
+			<nav>
+				<ul>
+					<li><a href="#gestion">Gestionar Página Web</a></li>
+					<li><a href="#ventas">Ventas</a></li>
+					<li><a href="#inventario">Inventario</a></li>
+					<li><a href="#empleados">Empleados</a></li>
+				</ul>
+			</nav>
+		</div>
+		<hr class="linea-verde">
+		<main>
+			<section id="gestion">
+				<h2>Gestionar Página Web</h2>
+				<!-- Aquí se mostrará la información sobre la gestión de la página web -->
+			</section>
+			<section id="ventas">
+				<h2>Ventas</h2>
+				<canvas id="ventas-chart"></canvas>
+				<!-- Aquí se mostrará la información de las ventas -->
+			</section>
+			<section id="inventario">
+				<h2>Inventario</h2>
+				<!-- Aquí se mostrará la información del inventario -->
+			</section>
+			<section id="empleados">
+				<h2>Empleados</h2>
+				<!-- Aquí se mostrará la información de los empleados -->
+			</section>
+		</main>
+		<hr class="linea-verde">
+		<footer>
+			<p>Pollería ChickenGO - Todos los derechos reservados &copy; 2023</p>
+		</footer>
+		<script src="AdministrarPolleria.js"></script>
+	</body>
+</html>

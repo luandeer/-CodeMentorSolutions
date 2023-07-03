@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba de conexión a la base de datos</title>
+</head>
+<body>
+    <h1>Prueba de conexión a la base de datos</h1>
+
+    <?php
+    $servername = "localhost";
+    $username = "tu_usuario";
+    $password = "tu_contraseña";
+    $database = "nombre_de_la_base_de_datos";
+
+    // Intentar realizar la conexión
+    $conn = new mysqli($servername, $username, $password, $database);
+
+    // Verificar si la conexión fue exitosa
+    if ($conn->connect_error) {
+        die("Error al conectar a la base de datos: " . $conn->connect_error);
+    } else {
+        echo "¡Conexión exitosa a la base de datos!";
+        // Aquí puedes realizar tus consultas a la base de datos
+        // ...
+    }
+
+    // Cerrar la conexión
+    $conn->close();
+    ?>
+
+</body>
+</html>
