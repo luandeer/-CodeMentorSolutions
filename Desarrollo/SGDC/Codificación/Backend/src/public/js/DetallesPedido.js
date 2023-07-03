@@ -8,8 +8,8 @@ if(datosProducto)
 }
 else
 {
-    document.getElementById("nombrePizza").innerText = "---";
-    document.getElementById("precioPizza").innerText = "---";
+    document.getElementById("nombreProducto").innerText = "---";
+    document.getElementById("precioProducto").innerText = "---";
 }
 
 function removerLocalStorage()
