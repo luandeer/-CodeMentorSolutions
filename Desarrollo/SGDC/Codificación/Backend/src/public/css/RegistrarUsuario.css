@@ -21,7 +21,7 @@ header {
 }
 .imagen_fondo {
     position: relative;
-    background-image: url("Recursos/ColorFondo.png");
+    background-image: url("../img/ColorFondo.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -29,7 +29,7 @@ header {
 }
 .contenido{
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 38%;
     width: 400px;
     background: white;
@@ -52,9 +52,9 @@ header {
     display: flex;
     align-items: center;
 }
-.items-izq img {
-    width:120px;
-    margin-left: -10px;
+.items-izq img{
+    width:12%;
+    height: auto;
 }
 .items-izq a p{
     padding: 5px;
@@ -71,27 +71,26 @@ header {
     text-decoration: none;
     margin-left: 30px;
 }
-.items-der nav ul {
+nav ul {
     align-items: center;
 	display: flex;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-.items-der nav ul li {
+nav ul li {
 	margin-right: 30px;
 }
-.items-der nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
+nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
     width: 20px;
     height: auto;
     margin-right: -8px;
 }
-.items-der nav ul li a {
+nav ul li a {
     text-align: center;
 	color: #FFFFFF;
 	text-decoration: none;
 }
-
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -122,36 +121,21 @@ button[type="submit"]:hover {
     background-color: #0C833A;
 }
 
-.boton_iniciar{
-    transform: translate(72%,34%);
+.boton_registrar{
+    transform: translate(109%,30%);
     border-radius: 10px;
     font-size: 17px;/*El predeterminado es de 16px*/
     font-family: 'Times New Roman', Times, serif; /*Tipo de LetraS*/
 }
-
-.continuar-con{
+.tienes-cuenta{
+    margin-left: 10px;
+    margin-top:30px;
     text-align: center;
-    
 }
-.boton-google{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
-    border-radius: 10px;
-    background-color: #ff3737;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-.boton-facebook{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
-    border-radius: 10px;
-    background-color: #0047AB;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+.tienes-cuenta a{
+    text-decoration: none;
+    font-style: italic;
+    color: #8B0000;
 }
 footer{
     font-size: 19px;/*El predeterminado es de 16px*/

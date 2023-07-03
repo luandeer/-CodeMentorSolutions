@@ -21,7 +21,7 @@ header {
 }
 .imagen_fondo {
     position: relative;
-    background-image: url("Recursos/ColorFondo.png");
+    background-image: url("../img/ColorFondo.png");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -29,7 +29,7 @@ header {
 }
 .contenido{
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 38%;
     width: 400px;
     background: white;
@@ -71,26 +71,27 @@ header {
     text-decoration: none;
     margin-left: 30px;
 }
-nav ul {
+.items-der nav ul {
     align-items: center;
 	display: flex;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-nav ul li {
+.items-der nav ul li {
 	margin-right: 30px;
 }
-nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
+.items-der nav ul li a img{/*Para el Logo de Ingresa o Registrate*/
     width: 20px;
     height: auto;
     margin-right: -8px;
 }
-nav ul li a {
+.items-der nav ul li a {
     text-align: center;
 	color: #FFFFFF;
 	text-decoration: none;
 }
+
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -121,21 +122,36 @@ button[type="submit"]:hover {
     background-color: #0C833A;
 }
 
-.boton_registrar{
-    transform: translate(109%,30%);
+.boton_iniciar{
+    transform: translate(72%,34%);
     border-radius: 10px;
     font-size: 17px;/*El predeterminado es de 16px*/
     font-family: 'Times New Roman', Times, serif; /*Tipo de LetraS*/
 }
-.tienes-cuenta{
-    margin-left: 10px;
-    margin-top:30px;
+
+.continuar-con{
     text-align: center;
+    
 }
-.tienes-cuenta a{
-    text-decoration: none;
-    font-style: italic;
-    color: #8B0000;
+.boton-google{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: #ff3737;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.boton-facebook{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: #0047AB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 footer{
     font-size: 19px;/*El predeterminado es de 16px*/

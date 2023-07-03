@@ -67,88 +67,104 @@ header {
 }
 
 .fondo{
+    padding: 155px 0;
     background: #FEF4E0;
-    padding-bottom: 40px;
 }
 
-.fondo nav{
-    position: relative;/*Eso me permite poder usar el left, rigth, botoom y top para mover un contenedor*/
-    left: 33%;
-    top: 60px;
-    border-radius: 10px;
-    display: inline-flex;
-    border: 1px solid #000000;
-    margin-bottom: 90px;
-    font-size: 20px;/*El predeterminado es de 16px*/
+
+#factura
+{
     font-family: 'Times New Roman', Times, serif;
+    width: 550px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 2%;
+    border-radius: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
 }
-.fondo nav ul{
-    padding-right: 20px;
-}
-.tipo-seccion{
-    text-align: center;
-    display: inline-block;
-    margin-right: 20px;
-}
-.tipo-seccion img{
-    align-items: center;
-    max-width: 60px;
-	height: auto;
-    
-}
-.tipo-seccion a{
-	color: #000000;
-    text-decoration: none;
-}
-.promociones {
-    display: flex-inline;
-	flex-wrap: wrap;
-}
-
-.opcion{
+#encabezado-factura
+{
     display: flex;
 }
-
-.fondo h1{
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+#encabezado-factura img
+{
+    width: 100px;
 }
-.menu-item {
-    font-size: 18px;/*El predeterminado es de 16px*/
-    font-family: 'Times New Roman', Times, serif; /*Tipo de Letra*/
-    border-radius: 15px;
-	flex: 1 0 30%;
-	margin: 10px;
-	padding: 10px;
-	background-color: #FEF4E0;
-	border: 1px solid #ddd;
-	text-align: center;
+#titulo-factura{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 50px;
 }
-.menu-item img {
-    border-radius: 15px;
-	max-width: 50%;
-	height: auto;
-}
-
-.menu-item h3 {
-	margin-top: 0;
-}
-
-.menu-item p {
-	margin-bottom: 10px;
-}
-
-.menu-item button {
-    font-family: 'Times New Roman', Times, serif;
+#apartado-fecha
+{
     font-size: 18px;
-    border-radius: 10px;
-	background-color: #0C833A;
-	color: #EFD426;
-	border: none;
-	padding: 10px 20px;
-	cursor: pointer;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
 }
+#fecha-factura {
+    margin-left: 15px;
+}
+
+#contenido-factura {
+    margin-top: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+table th {
+    text-align: left;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.boton-continuar {
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+.boton-continuar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
 footer{
     font-size: 19px;/*El predeterminado es de 16px*/
     font-family: 'Times New Roman', Times, serif; /*Tipo de LetraS*/

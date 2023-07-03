@@ -1,4 +1,3 @@
-
 function recogerDetalles()
 {
   //Solo me recolecta los datos del primer producto, ya que solo recolecta los datos del primer class
