@@ -27,7 +27,7 @@ botonRegistrar.addEventListener("submit", (event) =>
   const resultadoValidacionNombre = validarNombre(nombres);
   const resultadoValidacionCelular = validarCelular(celular);
   const resultadoValidacionDireccion = validarDireccion(direccion);
-  const resultadoValidacionContraseña = validarContraseña(passwrd);
+  const resultadoValidacionContrasenya = validarContrasenya(passwrd);
 
   if (!resultadoValidacionNombre) {
     console.log("El nombre no es válido");
@@ -38,7 +38,7 @@ botonRegistrar.addEventListener("submit", (event) =>
   if (!resultadoValidacionDireccion) {
     console.log("La dirección no es válida");
   }
-  if (!resultadoValidacionContraseña) {
+  if (!resultadoValidacionContrasenya) {
     console.log("La contraseña no es válida");
   }
 
@@ -70,8 +70,7 @@ function validarDireccion(direccion) {
   const direccionRegex = /^[a-zA-Z0-9\s\-.,#áéíóúÁÉÍÓÚñÑ]+$/;
   return direccionRegex.test(direccion);
 }
-// Validación de la contraseña (mínimo 8 caracteres, al menos una letra mayúscula, una letra minúscula y un número)
-function validarContraseña(password) {
-  const contraseñaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+function validarContrasenya(password) {
+  const contraseñaRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$/;
   return contraseñaRegex.test(password);
 }

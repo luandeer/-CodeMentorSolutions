@@ -2,7 +2,6 @@ const conexion = require('../database/database');
 
 const registrarUsuario = (req, res) => {
   let { nombres, apellidos, celular, direccion, passwrd } = req.body;
-  console.log(passwrd);
   const query = `INSERT INTO clientes (nombres, apellidos, celular, direccion, passwrd) VALUES ("${nombres}", "${apellidos}", "${celular}", "${direccion}", "${passwrd}")`;
 
   conexion.query(query, (err, result) => {
