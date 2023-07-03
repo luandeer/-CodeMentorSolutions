@@ -1,37 +1,42 @@
-document.getElementById("registrationForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Evita que el formulario se envíe
-
-  // Obtener los valores ingresados por el usuario
-  let email = document.getElementById("celular").value;
-  let password = document.getElementById("password").value;
-
-  // Enviar los datos del formulario al servidor
-  let data = {
-    celular: celular,
-    password: password
-  };
-
-  // Realizar una solicitud AJAX al servidor para el inicio de sesión
-  fetch("/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  })
-  .then(function(response) {
-    // Verificar el estado de la respuesta
-    if (response.ok) {
-      // Inicio de sesión exitoso
-      alert("¡Inicio de sesión exitoso!");
-      window.location.href = "MostrarPromociones.html"; 
-    } else {
-      // Credenciales inválidas
-      alert("Credenciales inválidas. Por favor, verifique su celular y contraseña.");
+document.getElementById("registrationForm").addEventListener("submit", function(event)
+ {
+    event.preventDefault(); // Evita que el formulario se envíe
+  
+    // Obtener los valores ingresados por el usuario
+    var celular = document.getElementById("celular").value;
+    var password = document.getElementById("password").value;
+    
+    // Aquí puedes realizar validaciones adicionales si es necesario
+    if((password.length > 0) && (celular.length > 0))
+    {
+        alert("¡ BIENVENIDO !");
     }
-  })
-  .catch(function(error) {
-    // Manejar errores aquí
-    console.error(error);
+
+    // Enviar los datos del formulario al servidor
+    var data = {
+      celular: celular,
+      password: password
+    };
+  
+    // Aquí puedes realizar una solicitud AJAX para enviar los datos al servidor
+
+
+    // Por ejemplo, usando la función fetch()
+  
+    // Ejemplo de solicitud fetch:
+    fetch("url_del_servidor", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+    .then(function(response) {
+      // Manejar la respuesta del servidor aquí
+      console.log(response);
+    })
+    .catch(function(error) {
+      // Manejar errores aquí
+      console.error(error);
+    });
   });
-});
