@@ -59,7 +59,7 @@ botonRegistrar.addEventListener("submit", (event) =>
   })
   .then( response => {
     if (response.ok)
-    window.location.href = "index.html";
+      window.location.href = "index.html";
   })
   .catch( error => console.error(error) );
 
