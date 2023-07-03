@@ -8,11 +8,9 @@ function mostrarDetallesEntrega()
     if(opcionDelivery.checked)
     {
         divEntregaDelivery.style.display = "block";
-        /*divEntregaTienda.style.display = "none";*/
     }
     if(opcionTienda.checked)
     {
-        /*divEntregaDelivery.style.display = "none";*/
         divEntregaTienda.style.display = "block";
     }
 }
