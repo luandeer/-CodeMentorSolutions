@@ -31,15 +31,19 @@ botonRegistrar.addEventListener("submit", (event) =>
 
   if (!resultadoValidacionNombre) {
     console.log("El nombre no es válido");
+    return
   }
   if (!resultadoValidacionCelular) {
     console.log("El número de celular no es válido");
+    return
   }
   if (!resultadoValidacionDireccion) {
     console.log("La dirección no es válida");
+    return
   }
   if (!resultadoValidacionContrasenya) {
     console.log("La contraseña no es válida");
+    return
   }
 
   // Enviar los datos del formulario al servidor
@@ -53,7 +57,10 @@ botonRegistrar.addEventListener("submit", (event) =>
     },
     body: JSON.stringify(data)
   })
-  .then( response => console.log(response) )
+  .then( response => {
+    if (response.ok)
+    window.location.href = "index.html";
+  })
   .catch( error => console.error(error) );
 
 });

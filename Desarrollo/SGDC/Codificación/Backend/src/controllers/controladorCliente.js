@@ -8,10 +8,8 @@ const registrarUsuario = (req, res) => {
     if (err)
       throw err;
 
-    // alert("Usuario registrado");
+    res.status(200).json({ message: 'Registro exitoso' });
   });
-
-  res.redirect('/');
 }
 
 const iniciarSesion = (req, res) => {
